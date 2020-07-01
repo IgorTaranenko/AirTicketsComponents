@@ -1,0 +1,90 @@
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #eedbdb;
+  color: #303030;
+}
+.GreenText {
+  color: green;
+}
+.header {
+  color: black;
+  width: 100%;
+  height: 6rem;
+  margin-top: 1rem;
+}
+.Logo {
+  display: inline-block;
+  background: url(../img/Logo.png) center no-repeat;
+  background-size: cover;
+  width: 5rem;
+  height: 5rem;
+}
+.LogoTitle {
+  margin-left: 2rem;
+  display: inline-block;
+  font-size: 2.4rem;
+  height: auto;
+  -webkit-transform: translateY(-65%);
+          transform: translateY(-65%);
+  font-family: sans-serif;
+}
+.Ticket {
+  border: 2px solid #ffcc00;
+  display: block;
+  background: #fff;
+  width: 100%;
+  height: 12rem;
+  margin: 0.5rem 0;
+}
+.Ticket-Logo {
+  background: url(../img/TicketLogo.png) center no-repeat;
+  background-size: cover;
+  display: inline-block;
+  margin-top: 1rem;
+  width: 6.5rem;
+  height: 6.5rem;
+}
+.Ticket-Info {
+  -webkit-transform: translateY(17%);
+          transform: translateY(17%);
+  width: 100%;
+  display: inline-block;
+}
+.Ticket-Info ul {
+  display: inline-block;
+}
+.Ticket-Info li {
+  list-style: none;
+}
+.Ticket-Values {
+  margin-left: 1rem;
+}
+.Filters {
+  padding: 1rem;
+  border: 2px solid #ffcc00;
+  margin: 0.5rem 0;
+  width: 100%;
+  background-color: #fff;
+}
+.Filters-Title {
+  color: #303030;
+}
+.Filters-clear {
+  width: 100%;
+  display: inline-block;
+  text-align: right;
+  color: blue;
+  font-size: 0.9rem;
+  text-decoration: underline;
+}
+.Filter input {
+  margin-right: 0.5rem;
+}
+.Filter label {
+  -webkit-transform: translateY(-7%);
+          transform: translateY(-7%);
+}
+.Filter:hover label {
+  text-decoration: underline;
+}
