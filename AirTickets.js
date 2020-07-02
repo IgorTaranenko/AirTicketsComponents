@@ -53,7 +53,7 @@
    let { onFilters } = this.state;
    let returnTickets = Tickets;   
 
-   if (!onFilters[0] && !onFilters[1] && !onFilters[2] && !onFilters[3]) {
+   if (onFilters.every((Filter) => {return !Filter})) {
     return this.buildTicket(Tickets);}
     else {
      if (onFilters[0]) {      
