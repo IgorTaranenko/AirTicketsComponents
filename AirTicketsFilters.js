@@ -1,6 +1,5 @@
  
  import React from 'react';
- import ReactDOM from 'react-dom';
  import FilterItem from './FilterItem.js'
  
  class AirTicketsFilters extends React.Component{
