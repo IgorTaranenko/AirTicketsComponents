@@ -11,7 +11,7 @@
  }
   
  render() {
- 	const Ticket = this.props.Ticket;
+ 	const { Ticket } = this.props;
   return(
   
   		   <div className="Ticket">
@@ -35,8 +35,8 @@
                <ul className="Ticket-Values">
                	<li><b>{Ticket.startCity}</b></li>
                	<li><b>{Ticket.endCity}</b></li>
-               	<li className={(Ticket.transfers == 0) ? "GreenText" : ""}><b>{Ticket.transfers}</b></li>
-               	<li className={(Ticket.class == "luxe") ? "GreenText" : ""}><b>{Ticket.class}</b></li>
+               	<li className={(Ticket.transfers === 0) ? "GreenText" : ""}><b>{Ticket.transfers}</b></li>
+               	<li className={(Ticket.class === "luxe") ? "GreenText" : ""}><b>{Ticket.class}</b></li>
                	<li><b>{Ticket.price}</b></li>
                	<li><b>{Ticket.freeplaces}</b></li>
                </ul>

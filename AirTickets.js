@@ -57,12 +57,12 @@
     else {
      if (onFilters[0]) {      
       returnTickets = returnTickets.filter(Ticket => {
-        return Ticket.transfers == 0;
+        return Ticket.transfers === 0;
       });
      }
      if (onFilters[1]) {
       returnTickets = returnTickets.filter(Ticket => {
-        return Ticket.transfers == 1;
+        return Ticket.transfers === 1;
       });
      } 
      if (onFilters[2]) {
@@ -72,7 +72,7 @@
      }
      if (onFilters[3]) {
       returnTickets = returnTickets.filter(Ticket => {
-        return Ticket.class == "luxe";
+        return Ticket.class === "luxe";
       });
      }
      return this.buildTicket(returnTickets);     
@@ -82,9 +82,6 @@
 
  render() {
   const { Tickets } = this.state;
-  const message = ['Hello', 'world'];
-  const message1 = ['Hello', 'world'];
-  let message2;
   
   
   return(

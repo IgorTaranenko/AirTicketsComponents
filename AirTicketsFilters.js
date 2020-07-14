@@ -19,7 +19,7 @@
  setFilter = id => {
  	const { Filters } = this.state;
  	const index = this.state.Filters.map(Filters => Filters.id).indexOf(id);
- 	(Filters[index].checked == "") ? Filters[index].checked = "true" : Filters[index].checked = "";
+ 	(Filters[index].checked === "") ? Filters[index].checked = "true" : Filters[index].checked = "";
  	this.props.getFilter(index);
  }
 
