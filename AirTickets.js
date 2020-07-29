@@ -93,6 +93,9 @@
          <div className="col-md-6">
            {this.showTickets(Tickets)}
          </div>
+         <div className="col-md-3">
+            <button onClick={() => window.location.assign('/')} className="mt-2 btn btn-primary center-block">К портфолио!</button>
+         </div>
        </div>
      </div>
    </div>
